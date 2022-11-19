@@ -1,6 +1,6 @@
 ---
 tarball_dir: "/usr/local"
-rke2_channel: stable
+rke2_channel: v1.21
 audit_policy_config_file_path: ""
 registry_config_file_path: ""
 add_iptables_rules: false
