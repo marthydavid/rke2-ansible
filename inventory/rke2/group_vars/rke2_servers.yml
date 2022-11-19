@@ -7,16 +7,16 @@ ansible_user: marth
 # Example of possible rke2_config.
 rke2_config:
   selinux: true
-  etcd-s3: true
-  etcd-s3-endpoint: "{{ vault_etcd_s3_endpoint }}"
-  etcd-s3-bucket: "{{ vault_etcd_s3_bucket }}"
-  etcd-s3-access-key: "{{ vault_etcd_s3_access_key }}"
-  etcd-s3-secret-key: "{{ vault_etcd_s3_secret_key }}"
+  #etcd-s3: true
+  #etcd-s3-endpoint: "{{ vault_etcd_s3_endpoint }}"
+  #etcd-s3-bucket: "{{ vault_etcd_s3_bucket }}"
+  #etcd-s3-access-key: "{{ vault_etcd_s3_access_key }}"
+  #etcd-s3-secret-key: "{{ vault_etcd_s3_secret_key }}"
   etcd-snapshot-schedule-cron: "0 */2 * * *"
   etcd-snapshot-retention: 56
 #  profile: cis-1.6
-#  disable:
-#    - rke2-canal
+  disable:
+    - rke2-ingress-nginx
 #  cni:
 #    - cilium
 #  kube-controller-manager-arg:
