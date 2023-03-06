@@ -11,5 +11,5 @@ rke2.linux-amd64.tar.gz
 
 tarball_install/*
 !tarball_install/README.md
-!inventory/rke2/
+!inventory/rke2*/
 !inventory/sample/

@@ -1,0 +1,10 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: nullserv
+  namespace: default
+spec:
+  repo: https://k8s-at-home.com/charts/
+  chart: nullserv
+  set:
+    global.systemDefaultRegistry: ""
